@@ -8,9 +8,9 @@
         .module('userdashApp.dash.controllers')
         .controller('DashController', DashController);
 
-    DashController.$inject = ['$scope', 'ProjectServ'];
+    DashController.$inject = ['$scope', 'ProjService'];
 
-    function DashController($scope, ProjectServ){
+    function DashController($scope, ProjService){
         console.log('DashController');
         $scope.isOverview = true;
         $scope.isProjects = false;
@@ -25,12 +25,12 @@
         };
 
         $scope.getProj = function () {
-            $scope.projects = ProjectServ.get();
+            $scope.projects = ProjService.get();
         };
 
         $scope.saveProj = function(){
             console.log($scope.newproj.name);
-           var newproj = new ProjectServ($scope.newproj);
+           var newproj = new ProjService($scope.newproj);
             newproj.$save();
         };
 

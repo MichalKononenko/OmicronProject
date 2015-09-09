@@ -6,11 +6,11 @@
 
     angular
         .module('userdashApp.projects.services')
-        .factory('ProjectServ', ProjectServ);
+        .factory('ProjService', ProjService);
 
-    ProjectServ.$inject = ['$resource'];
+    ProjService.$inject = ['$resource'];
 
-    function ProjectServ($resource){
+    function ProjService($resource){
         return $resource('/api/projects/:id', {}, {
             get: {method: 'GET', params:{}, isArray:true},
             save: {method: 'POST'}
