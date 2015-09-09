@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef015ae5-00ed-49e9-b131-959f95def8d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/javascript/userdash/auth/auth.module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/javascript/userdash/auth/auth.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/userdash/dash/dash.controller.js" afterPath="$PROJECT_DIR$/static/javascript/userdash/dash/dash.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/userdash/projects/controllers/projects.controller.js" afterPath="$PROJECT_DIR$/static/javascript/userdash/projects/controllers/projects.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/userdash/projects/services/projects.services.js" afterPath="$PROJECT_DIR$/static/javascript/userdash/projects/services/projects.services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OmicronProject/urls.py" afterPath="$PROJECT_DIR$/OmicronProject/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="OmicronProject.iws" />
@@ -96,13 +92,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="auth.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="auth.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/javascript/userdash/auth/auth.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25373134">
+            <state vertical-scroll-proportion="0.0">
               <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OmicronProject/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3432836">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,7 +191,6 @@
         <option value="$PROJECT_DIR$/templates/userdash/userdash.html" />
         <option value="$PROJECT_DIR$/authentication/models.py" />
         <option value="$PROJECT_DIR$/authentication/utils.py" />
-        <option value="$PROJECT_DIR$/OmicronProject/urls.py" />
         <option value="$PROJECT_DIR$/authentication/views.py" />
         <option value="$PROJECT_DIR$/OmicronProject/settings.py" />
         <option value="$PROJECT_DIR$/static/javascript/userdash/auth/auth.module.js" />
@@ -191,6 +198,7 @@
         <option value="$PROJECT_DIR$/static/javascript/userdash/projects/controllers/projects.controller.js" />
         <option value="$PROJECT_DIR$/static/javascript/userdash/dash/dash.controller.js" />
         <option value="$PROJECT_DIR$/static/javascript/userdash/auth/auth.service.js" />
+        <option value="$PROJECT_DIR$/OmicronProject/urls.py" />
       </list>
     </option>
   </component>
@@ -468,6 +476,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OmicronProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OmicronProjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OmicronProject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -808,7 +830,13 @@
       <option name="project" value="LOCAL" />
       <updated>1441840268299</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="creating AuthService for authenticating user">
+      <created>1441841167799</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1441841167799</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -855,7 +883,8 @@
     <MESSAGE value="adding projects view&#10;" />
     <MESSAGE value="added new project POST method&#10;" />
     <MESSAGE value="added Django Authentication framework&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Django Authentication framework&#10;" />
+    <MESSAGE value="creating AuthService for authenticating user" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating AuthService for authenticating user" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1178,16 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OmicronProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OmicronProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6119403">
@@ -1260,10 +1279,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/javascript/userdash/auth/auth.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25373134">
+        <state vertical-scroll-proportion="0.0">
           <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OmicronProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3432836">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
