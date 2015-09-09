@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-<html lang="en" ng-app="userdashApp">
+<html lang="en" ng-app="userdashApp" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,25 +52,40 @@
           <!-- Sidebar -->
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li class="active" ng-click="setVisible('overview')"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li ng-click="setVisible('project');getProj()"><a href="#">Projects</a></li>
+            <li ng-click="setVisible('equipment')"><a href="#">Equipment</a></li>
+            <li ng-click="setVisible('safety')"><a href="#">Lab Safety</a></li>
           </ul>
         </div>
 
           <!-- Main Dash -->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Dashboard</h1>
 
-            <div class="row placeholders" ng-controller="ProjectController">
+            <div class="row placeholders" ng-show="isProjects">
                 <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="project in projects">
                     <h3>{[{ project.name }]}</h3>
                     <h4>{[{ project.supervisor }]}</h4>
                 </div>
+                <button type="button" class="btn btn-primary" ng-click="setVisible('newproj')">New Project</button>
             </div>
 
-          <h2 class="sub-header">Section title</h2>
+            <form ng-show="isNewProject">
+                 <h2 class="sub-header">New Project</h2>
+                <div class="form-group">
+                    <label for="project_title" class="control-label">Title:</label>
+                    <input type="text" class="form-control" id="project_title" ng-model="newproj.name" required>
+                </div>
+                <div class="form-group">
+                    <label for="project_super" class="control-label">Supervisor:</label>
+                    <input type="text" class="form-control" id="project_super" ng-model="newproj.supervisor" required>
+                </div>
+                <div class="form-group">
+                    <label for="project_descrp" class="control-label">Description:</label>
+                    <input type="text" class="form-control" id="project_descr">
+                </div>
+                <button type="button" class="btn btn-primary" ng-click="saveProj()">Submit Proposal</button>
+            </form>
 
         </div>
       </div>

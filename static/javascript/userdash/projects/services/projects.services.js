@@ -12,7 +12,10 @@
 
     function ProjectServ($resource){
         return $resource('/api/projects/:id', {}, {
-            get: {method: 'GET', params:{}, isArray:true}
+            get: {method: 'GET', params:{}, isArray:true},
+            save: {method: 'POST'}
+        }, {
+            stripTrailingSlashes:false
         });
     }
 })();
