@@ -6,12 +6,12 @@
 
     angular
         .module('userdashApp.projects.directives')
-        .directive('projects', projects);
+        .directive('projectsdir', projectsdir);
 
-    function projects(){
+    function projectsdir(){
         return {
             restrict: 'E',
-            templateUrl: 'template/projects.html'
+            templateUrl: 'template/projectsdir.html'
         }
     }
 })();
