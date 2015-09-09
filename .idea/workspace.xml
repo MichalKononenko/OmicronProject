@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef015ae5-00ed-49e9-b131-959f95def8d9" name="Default" comment="Updated HTML&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/javascript/userdash/projects/directives/template/projectsdir.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/javascript/userdash/projects/directives/template/projects.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/userdash/javascript.html" afterPath="$PROJECT_DIR$/templates/userdash/javascript.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/userdash/projects/directives/projects.directive.js" afterPath="$PROJECT_DIR$/static/javascript/userdash/projects/directives/projects.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascript/userdash/projects/projects.module.js" afterPath="$PROJECT_DIR$/static/javascript/userdash/projects/projects.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/userdash/userdash.html" afterPath="$PROJECT_DIR$/templates/userdash/userdash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ef015ae5-00ed-49e9-b131-959f95def8d9" name="Default" comment="" />
     <ignored path="OmicronProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,7 +25,7 @@
       <file leaf-file-name="userdash.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/userdash/userdash.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38202247">
+            <state vertical-scroll-proportion="0.25093633">
               <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
               <folding />
             </state>
@@ -98,6 +90,12 @@
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -717,19 +715,25 @@
       <option name="project" value="LOCAL" />
       <updated>1441827209624</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configure projects js">
+      <created>1441828949820</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1441828949820</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40093786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282532" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942554" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -760,7 +764,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated HTML&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated HTML&#10;" />
+    <MESSAGE value="Configure projects js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure projects js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1173,7 +1178,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/userdash/userdash.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38202247">
+        <state vertical-scroll-proportion="0.25093633">
           <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
           <folding />
         </state>
