@@ -8,7 +8,8 @@
         .module('userdashApp', [
             'userdashApp.config',
             'userdashApp.routes',
-            'userdashApp.projects'
+            'userdashApp.projects',
+            'userdashApp.dash'
         ]);
 
     angular

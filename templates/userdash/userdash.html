@@ -46,7 +46,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="DashController">
       <div class="row">
 
           <!-- Sidebar -->
@@ -63,26 +63,10 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
-            <div class="row placeholders" ng-controller="ProjectCtrl">
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                    <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
+            <div class="row placeholders" ng-controller="ProjectController">
+                <div class="col-xs-6 col-sm-3 placeholder" ng-repeat="project in projects">
+                    <h3>{[{ project.name }]}</h3>
+                    <h4>{[{ project.supervisor }]}</h4>
                 </div>
             </div>
 
