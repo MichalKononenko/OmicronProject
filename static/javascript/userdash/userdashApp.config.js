@@ -8,10 +8,13 @@
         .module('userdashApp.config')
         .config(config);
 
-    config.$inject = ['$locationProvider'];
+    config.$inject = ['$locationProvider', '$interpolateProvider'];
 
-    function config($locationProvider){
+    function config($locationProvider, $interpolateProvider){
         $locationProvider.html5Mode(true);
         $locationProvider.hashPrefix('!');
+
+        $interpolateProvider.startSymbol('{[{');
+        $interpolateProvider.endSymbol('}]}');
     }
 })();

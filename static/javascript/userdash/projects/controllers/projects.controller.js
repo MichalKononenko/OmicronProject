@@ -6,11 +6,12 @@
 
     angular
         .module('userdashApp.projects.controllers')
-        .controller('ProjectCtrl', ProjectCtrl);
+        .controller('ProjectController', ProjectController);
 
-    ProjectCtrl.$inject = ['$scope', 'ProjectServ'];
+    ProjectController.$inject = ['$scope', 'ProjectServ'];
 
-    function ProjectCtrl($scope, ProjectServ){
-        console.log('ProjectCtrl');
+    function ProjectController($scope, ProjectServ){
+        console.log('ProjectController');
+        $scope.projects = ProjectServ.get();
     }
 })();
