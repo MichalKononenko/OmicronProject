@@ -1,0 +1,14 @@
+{% load compress %}
+{% load staticfiles %}
+
+{% compress js %}
+    <script src="{% static "assets/angular/angular.js" %}"></script>
+    <script src="{% static "assets/angular/angular-cookies.min.js" %}"></script>
+    <script src="{% static "assets/angular/angular-route.min.js" %}"></script>
+    <script src="{% static "assets/angular/angular-resource.min.js" %}"></script>
+    <script src="{% static "assets/jquery-2.1.4.min.js" %}"></script>
+    <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "javascript/dashboard/dashboard.js" %}"></script>
+    <script src="{% static "javascript/dashboard/dashboard.config.js" %}"></script>
+    <script src="{% static "javascript/dashboard/dashboard.routes.js" %}"></script>
+{% endcompress %}
