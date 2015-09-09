@@ -2,7 +2,7 @@
  * Created by shahab on 15-09-08.
  */
 (function(){
-
+    'use strict';
     angular
         .module('userdashApp.projects',[
             'userdashApp.projects.services',
