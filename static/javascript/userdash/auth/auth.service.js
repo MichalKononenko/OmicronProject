@@ -11,8 +11,8 @@
     AuthService.$inject = ['$resource'];
 
     function AuthService($resource){
-        return $resource('/api/', {}, {
-            register: {method: 'POST'}
+        return $resource('/api/:endpoint/', {}, {
+            register: {method: 'POST', params: {endpoint: 'register'}}
         }, {
             stripTrailingSlashes:false
         });
