@@ -11,9 +11,10 @@
     AuthService.$inject = ['$resource'];
 
     function AuthService($resource){
-        return $resource('/api/accounts/', {}, {
-            register: {method: 'POST'},
-            get: {method: 'GET'}
+        var csrf = '{{ csrf_token }}';
+        return $resource('/api/authtoken/', {}, {
+            register: {method: 'POST', headers: {'X-CSRFToken' : csrf}},
+            get: {method: 'GET', headers: {'X-CSRFToken' : csrf}}
         }, {
             stripTrailingSlashes:false
         });
