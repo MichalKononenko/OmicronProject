@@ -11,7 +11,14 @@
     config.$inject = ['$routeProvider'];
 
     function config($routeProvider){
-        $routeProvider.otherwise('/');
+        $routeProvider
+            .when('/userdash', {
+                templateUrl: '/templates/userdash/userdash.html',
+                controller: 'DashController'
+            })
+            .otherwise({
+            redirectTo: '/'
+        });
     }
 
 })();

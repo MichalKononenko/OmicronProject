@@ -7,5 +7,5 @@ class ProjectsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Projects
-        fields = ('name', 'supervisor')
+        fields = ('title', 'supervisor')
 

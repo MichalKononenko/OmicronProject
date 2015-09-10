@@ -8,10 +8,10 @@
         .module('userdashApp.projects.controllers')
         .controller('ProjectController', ProjectController);
 
-    ProjectController.$inject = ['$scope', 'ProjectServ'];
+    ProjectController.$inject = ['$scope', 'ProjService'];
 
     function ProjectController($scope, ProjectServ){
         console.log('ProjectController');
-        $scope.projects = ProjectServ.get();
+        $scope.projects = ProjService.get();
     }
 })();
