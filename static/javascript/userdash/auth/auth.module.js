@@ -6,9 +6,13 @@
 
     angular
         .module('userdashApp.auth',[
-            'userdashApp.auth.services'
+            'userdashApp.auth.services',
+            'userdashApp.auth.controllers'
         ]);
 
     angular
         .module('userdashApp.auth.services', ['ngResource']);
+
+    angular
+        .module('userdashApp.auth.controllers', []);
 })();

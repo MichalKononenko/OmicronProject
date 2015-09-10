@@ -15,19 +15,6 @@
             register: {method: 'POST'}
         }, {
             stripTrailingSlashes:false
-        }).then(
-        function(response){
-            //success callback
-            var token = response.data.token;
-            var username = response.data.username;
-
-            if(token && username){
-                $window.localStorage.token = token;
-                $window.localStorage.username = username;
-            }
-        },
-        function(response){
-            //error callback
         });
     }
 })();

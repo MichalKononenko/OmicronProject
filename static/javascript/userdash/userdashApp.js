@@ -9,7 +9,8 @@
             'userdashApp.config',
             'userdashApp.routes',
             'userdashApp.projects',
-            'userdashApp.dash'
+            'userdashApp.dash',
+            'userdashApp.auth'
         ]);
 
     angular
