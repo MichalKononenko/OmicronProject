@@ -12,6 +12,7 @@
 
     function AuthController($scope, AuthService){
 
+
         $scope.register = function(){
             var new_user = {};
             new_user.username = $scope.regUser;
