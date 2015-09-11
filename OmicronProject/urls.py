@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from rest_framework import routers
-from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken import views
 
 from OmicronProject import views as omicron_views
 from projects.views import ProjectsViewSet
@@ -17,6 +17,7 @@ urlpatterns = patterns('',
     url(r'^userdash/', omicron_views.userdash, name='userdash'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', omicron_views.cover, name='cover'),
+    url(r'^api-token-auth/', views.obtain_auth_token)
 )
 
 

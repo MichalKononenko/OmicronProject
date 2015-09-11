@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'compressor',
     'projects',
     'authentication',
+    'rest_framework.authtoken'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -105,6 +106,7 @@ COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication'
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
