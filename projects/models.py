@@ -7,4 +7,4 @@ class Projects(models.Model):
     supervisor = models.CharField(max_length=40, blank=False, default='')
 
     def __str__(self):
-        return self.name
+        return self.title

@@ -8,5 +8,6 @@ def cover(request):
 def dashboard(request):
     return render_to_response('dashboard/dashboard.html')
 
+
 def userdash(request):
     return render_to_response('userdash/userdash.html')
