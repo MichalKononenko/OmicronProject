@@ -1,19 +1,20 @@
-from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
+from django.contrib.auth.models import User
+
+from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from authentication.models import Accounts
-from authentication.serializers import AccountsSerializer
-
-
-class UserView(viewsets.ModelViewSet):
-
-    queryset = Accounts.objects.all()
-    serializer_class = AccountsSerializer
-    permission_classes = (IsAuthenticated,)
-
-    def get(self, request, format=None):
+class AuthToken(APIView):
+    def post(self, request, format=None):
+        username = request.data.get("username")
+        password = request.data.get("password")
+        try:
+            user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            user = User.objects.create_user(username=username)
+            user.set_password(password)
+            user.save()
         content = {
-            'status': 'request was permitted'
+            'user': str(user.username),
+            'token': str(user.auth_token),
         }
         return Response(content)

@@ -12,7 +12,7 @@
 
     function ProjService($resource){
         return $resource('/api/projects/:id', {}, {
-            get: {method: 'GET', params:{}, isArray:true},
+            get: {method: 'GET', isArray:true},
             save: {method: 'POST'}
         }, {
             stripTrailingSlashes:false
