@@ -1,6 +1,6 @@
 ### Python template
 # PyCharm files
-.idea/
+.idea
 
 # Local SQLite databases
 db.sqlite3
